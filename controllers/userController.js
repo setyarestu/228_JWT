@@ -47,12 +47,4 @@ async function login(req, res) {
             message: "Login berhasil",
             token
         });
-    } catch (err) {
-        return res.status(500).json({ error: 'Failed to login user' });
-    }
-}
-
-module.exports = {
-    register,
-    login
-};
+ 
